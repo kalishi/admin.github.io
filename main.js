@@ -187,7 +187,7 @@ $(function () {
   function parseMenu(ul, menu) {
     for (var i = 0; i < menu.length; i++) {
       var li = $(ul).append(
-        '<li class="font-medium text-blue-600 dark:text-blue-500 hover:underline">' + menu[i].name + '</li>');
+        '<li class="font-medium text-blue-600 dark:text-blue-500">' + menu[i].name + '</li>');
       if (menu[i].sub != null) {
         var subul = $('<ul class="list px-8  mt-2 space-y-1 list-decimal  list-inside"></ul>');
         $(li).append(subul);
@@ -201,6 +201,13 @@ $(function () {
 });
 
 
+$("button").click(function (e) { 
+  e.preventDefault();
+ $(this).find('div').each(function() {
+  console.log( $(this));
+  $(this).toggleClass("hidden");
+});
+});
 
 $(document).on('click', '.list > li ', function () {
   $(this).next('ul').toggle();

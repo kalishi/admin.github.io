@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Departement Administratif Haiti</title>
+  <title>Unités administratives</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
   <style>
     * {
       transition: ease-in-out 200ms;
@@ -16,19 +16,16 @@
     ul ul {
       display: none;
     }
-
-    li {
-      cursor: hand;
+    @media screen and (min-width: 768px) {
+      .info{
+      display: flex;
+      gap: 20px;
+      
     }
-
-    /* a {
-    color: red;
-  } */
+    }
+    
   </style>
 </head>
-
-<a href="http://" target="_blank" rel="noopener noreferrer"></a>
-
 <body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
@@ -37,12 +34,12 @@
   <br>
   <br><br>
   <main class="p-5">
-    <h2 class="text-2xl font-bold dark:text-white">Unités Administratifs d'Haiti</h2>
+    <h2 class="text-2xl font-bold dark:text-white">Unités administratives d'Haiti</h2>
     <br><br>
     <div id="accordion-collapse" data-accordion="collapse">
       <h2 id="accordion-collapse-heading-1">
         <button type="button"
-          class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+          class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
           data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
           aria-controls="accordion-collapse-body-1">
           <span>DEPARTEMENT OUEST</span>
@@ -59,7 +56,7 @@
             <button data-collapse-toggle="info-ouest" type="button"
               class="inline-flex items-center justify-center p-2 w-auto h-10 text-lg font-semibold rounded-lg bg-blue-500 text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="info-ouest" aria-expanded="false">
-              Information sur l'ouest
+              Informations sur l'ouest
 
               <div class="text-center">
                 <i class='bx bx-plus mx-2'></i>
@@ -73,11 +70,11 @@
             <div class="hidden my-4" id="info-ouest">
 
 
-              <div class="bg-white rounded-lg  grid w-full gap-2 md:grid-cols-4 ">
+              <div class="bg-white rounded-lg  w-full info">
 
                 <div class="p-2 my-2 bg-yellow-200 w-full rounded-lg">
                   <h2 class="text-lg font-black font-semibold">Superficie</h2>
-                  <h2 class="text-lg text-gray-500 font-semibold">10 00 km</h2>
+                  <h2 class="text-lg text-gray-500 font-semibold">10 00 m<sup>2</sup> </h2>
 
                 </div>
                 <div class="p-2 my-2 bg-blue-200 w-full rounded-lg">
@@ -85,7 +82,7 @@
                   <h2 class="text-lg text-gray-500 font-semibold">12 000</h2>
                 </div>
                 <div class="p-2 my-2 bg-pink-200 w-full rounded-lg">
-                  <h2 class="text-lg font-black font-semibold">Cartiers</h2>
+                  <h2 class="text-lg font-black font-semibold">Quartiers</h2>
                   <h2 class="text-lg text-gray-500 font-semibold">23</h2>
                 </div>
                 <div class="p-2 my-2 bg-teal-100 w-full rounded-lg">
@@ -112,10 +109,10 @@
         </div>
 
       </div>
-    </div>
+      
     <h2 id="accordion-collapse-heading-2">
       <button type="button"
-        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
         data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
         aria-controls="accordion-collapse-body-2">
         <span>DEPARTEMENT SUD-EST</span>
@@ -128,12 +125,67 @@
     </h2>
     <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
       <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-        <p class="text-gray-500 dark:text-gray-400">Contenu du département ...</p>
+       
+          <div class="ml-5">
+            <button data-collapse-toggle="info-sudest" type="button"
+              class="inline-flex items-center justify-center p-2 w-auto h-10 text-lg font-semibold rounded-lg bg-blue-500 text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="info-sudest" aria-expanded="false">
+              Informations sur Sud-est
+
+              <div class="text-center">
+                <i class='bx bx-plus mx-2'></i>
+              </div>
+              <div class="hidden text-center">
+                <i class='hidden bx bx-minus mx-2'></i>
+              </div>
+
+            </button>
+
+            <div class="hidden my-4" id="info-sudest">
+
+
+              <div class="bg-white rounded-lg  w-full info">
+
+                <div class="p-2 my-2 bg-yellow-200 w-full rounded-lg">
+                  <h2 class="text-lg font-black font-semibold">Superficie</h2>
+                  <h2 class="text-lg text-gray-500 font-semibold">10 00 m<sup>2</sup> </h2>
+
+                </div>
+                <div class="p-2 my-2 bg-blue-200 w-full rounded-lg">
+                  <h2 class="text-lg font-black font-semibold">Populations</h2>
+                  <h2 class="text-lg text-gray-500 font-semibold">12 000</h2>
+                </div>
+                <div class="p-2 my-2 bg-pink-200 w-full rounded-lg">
+                  <h2 class="text-lg font-black font-semibold">Quartiers</h2>
+                  <h2 class="text-lg text-gray-500 font-semibold">23</h2>
+                </div>
+                <div class="p-2 my-2 bg-teal-100 w-full rounded-lg">
+                  <h2 class="text-lg font-black font-semibold">Maisons</h2>
+                  <h2 class="text-lg text-gray-500 font-semibold">2 000</h2>
+                </div>
+                <div class="p-2 my-2 bg-orange-300 w-full rounded-lg">
+                  <h2 class="text-lg font-black font-semibold">Historiques</h2>
+                  <h2 class="text-lg text-gray-500 font-semibold">8</h2>
+                </div>
+
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <div class="my-4 w-full border-2 p-4 rounded-lg">
+            <ul id="menu-sudest" class="list max-w-md space-y-1  list-none list-inside dark:text-gray-400 font-bold ">
+          </ul>
+          
+        </div>
+
       </div>
     </div>
     <h2 id="accordion-collapse-heading-3">
       <button type="button"
-        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
         data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
         aria-controls="accordion-collapse-body-3">
         <span>DEPARTEMENT NORD</span>
@@ -145,15 +197,69 @@
       </button>
     </h2>
     <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
-      <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-        <p class="mb-2 text-gray-500 dark:text-gray-400">Contenu de département de ...</p>
+      <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+       
+        <div class="ml-5">
+          <button data-collapse-toggle="info-nord" type="button"
+            class="inline-flex items-center justify-center p-2 w-auto h-10 text-lg font-semibold rounded-lg bg-blue-500 text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="info-nord" aria-expanded="false">
+            Informations sur Nord
 
+            <div class="text-center">
+              <i class='bx bx-plus mx-2'></i>
+            </div>
+            <div class="hidden text-center">
+              <i class='hidden bx bx-minus mx-2'></i>
+            </div>
+
+          </button>
+
+          <div class="hidden my-4" id="info-nord">
+
+
+            <div class="bg-white rounded-lg  w-full info">
+
+              <div class="p-2 my-2 bg-yellow-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Superficie</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">10 00 m<sup>2</sup> </h2>
+
+              </div>
+              <div class="p-2 my-2 bg-blue-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Populations</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">12 000</h2>
+              </div>
+              <div class="p-2 my-2 bg-pink-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Quartiers</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">23</h2>
+              </div>
+              <div class="p-2 my-2 bg-teal-100 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Maisons</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">2 000</h2>
+              </div>
+              <div class="p-2 my-2 bg-orange-300 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Historiques</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">8</h2>
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="my-4 w-full border-2 p-4 rounded-lg">
+          <ul id="menu-nord" class="list max-w-md space-y-1  list-none list-inside dark:text-gray-400 font-bold ">
+        </ul>
+        
       </div>
+
+    </div>
     </div>
 
     <h2 id="accordion-collapse-heading-4">
       <button type="button"
-        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
         data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
         aria-controls="accordion-collapse-body-4">
         <span>DEPARTEMENT NORD-EST</span>
@@ -165,15 +271,69 @@
       </button>
     </h2>
     <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
-      <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-        <p class="mb-2 text-gray-500 dark:text-gray-400">Contenu de département de ...</p>
+      <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+       
+        <div class="ml-5">
+          <button data-collapse-toggle="info-nordest" type="button"
+            class="inline-flex items-center justify-center p-2 w-auto h-10 text-lg font-semibold rounded-lg bg-blue-500 text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="info-nordest" aria-expanded="false">
+            Informations sur Nord-est
 
+            <div class="text-center">
+              <i class='bx bx-plus mx-2'></i>
+            </div>
+            <div class="hidden text-center">
+              <i class='hidden bx bx-minus mx-2'></i>
+            </div>
+
+          </button>
+
+          <div class="hidden my-4" id="info-nordest">
+
+
+            <div class="bg-white rounded-lg  w-full info">
+
+              <div class="p-2 my-2 bg-yellow-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Superficie</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">10 00 m<sup>2</sup> </h2>
+
+              </div>
+              <div class="p-2 my-2 bg-blue-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Populations</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">12 000</h2>
+              </div>
+              <div class="p-2 my-2 bg-pink-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Quartiers</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">23</h2>
+              </div>
+              <div class="p-2 my-2 bg-teal-100 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Maisons</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">2 000</h2>
+              </div>
+              <div class="p-2 my-2 bg-orange-300 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Historiques</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">8</h2>
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="my-4 w-full border-2 p-4 rounded-lg">
+          <ul id="menu-nordest" class="list max-w-md space-y-1  list-none list-inside dark:text-gray-400 font-bold ">
+        </ul>
+        
       </div>
+
+    </div>
     </div>
 
     <h2 id="accordion-collapse-heading-5">
       <button type="button"
-        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
         data-accordion-target="#accordion-collapse-body-5" aria-expanded="false"
         aria-controls="accordion-collapse-body-5">
         <span>DEPARTEMENT ARTIBONITE</span>
@@ -185,15 +345,69 @@
       </button>
     </h2>
     <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5">
-      <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-        <p class="mb-2 text-gray-500 dark:text-gray-400">Contenu de département de ...</p>
+      <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+       
+        <div class="ml-5">
+          <button data-collapse-toggle="info-artibonite" type="button"
+            class="inline-flex items-center justify-center p-2 w-auto h-10 text-lg font-semibold rounded-lg bg-blue-500 text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="info-artibonite" aria-expanded="false">
+            Informations sur Artibonite
 
+            <div class="text-center">
+              <i class='bx bx-plus mx-2'></i>
+            </div>
+            <div class="hidden text-center">
+              <i class='hidden bx bx-minus mx-2'></i>
+            </div>
+
+          </button>
+
+          <div class="hidden my-4" id="info-artibonite">
+
+
+            <div class="bg-white rounded-lg  w-full info">
+
+              <div class="p-2 my-2 bg-yellow-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Superficie</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">10 00 m<sup>2</sup> </h2>
+
+              </div>
+              <div class="p-2 my-2 bg-blue-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Populations</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">12 000</h2>
+              </div>
+              <div class="p-2 my-2 bg-pink-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Quartiers</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">23</h2>
+              </div>
+              <div class="p-2 my-2 bg-teal-100 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Maisons</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">2 000</h2>
+              </div>
+              <div class="p-2 my-2 bg-orange-300 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Historiques</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">8</h2>
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="my-4 w-full border-2 p-4 rounded-lg">
+          <ul id="menu-artibonite" class="list max-w-md space-y-1  list-none list-inside dark:text-gray-400 font-bold ">
+        </ul>
+        
       </div>
+
+    </div>
     </div>
 
     <h2 id="accordion-collapse-heading-6">
       <button type="button"
-        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
         data-accordion-target="#accordion-collapse-body-6" aria-expanded="false"
         aria-controls="accordion-collapse-body-6">
         <span>DEPARTEMENT CENTRE</span>
@@ -205,15 +419,69 @@
       </button>
     </h2>
     <div id="accordion-collapse-body-6" class="hidden" aria-labelledby="accordion-collapse-heading-6">
-      <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-        <p class="mb-2 text-gray-500 dark:text-gray-400">Contenu de département de ...</p>
+      <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+       
+        <div class="ml-5">
+          <button data-collapse-toggle="info-centre" type="button"
+            class="inline-flex items-center justify-center p-2 w-auto h-10 text-lg font-semibold rounded-lg bg-blue-500 text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="info-centre" aria-expanded="false">
+            Informations sur Centre
 
+            <div class="text-center">
+              <i class='bx bx-plus mx-2'></i>
+            </div>
+            <div class="hidden text-center">
+              <i class='hidden bx bx-minus mx-2'></i>
+            </div>
+
+          </button>
+
+          <div class="hidden my-4" id="info-centre">
+
+
+            <div class="bg-white rounded-lg  w-full info">
+
+              <div class="p-2 my-2 bg-yellow-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Superficie</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">10 00 m<sup>2</sup> </h2>
+
+              </div>
+              <div class="p-2 my-2 bg-blue-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Populations</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">12 000</h2>
+              </div>
+              <div class="p-2 my-2 bg-pink-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Quartiers</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">23</h2>
+              </div>
+              <div class="p-2 my-2 bg-teal-100 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Maisons</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">2 000</h2>
+              </div>
+              <div class="p-2 my-2 bg-orange-300 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Historiques</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">8</h2>
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="my-4 w-full border-2 p-4 rounded-lg">
+          <ul id="menu-centre" class="list max-w-md space-y-1  list-none list-inside dark:text-gray-400 font-bold ">
+        </ul>
+        
       </div>
+
+    </div>
     </div>
 
     <h2 id="accordion-collapse-heading-7">
       <button type="button"
-        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
         data-accordion-target="#accordion-collapse-body-7" aria-expanded="false"
         aria-controls="accordion-collapse-body-7">
         <span>DEPARTEMENT SUD</span>
@@ -225,15 +493,69 @@
       </button>
     </h2>
     <div id="accordion-collapse-body-7" class="hidden" aria-labelledby="accordion-collapse-heading-7">
-      <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-        <p class="mb-2 text-gray-500 dark:text-gray-400">Contenu de département de ...</p>
+      <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+       
+        <div class="ml-5">
+          <button data-collapse-toggle="info-sud" type="button"
+            class="inline-flex items-center justify-center p-2 w-auto h-10 text-lg font-semibold rounded-lg bg-blue-500 text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="info-sud" aria-expanded="false">
+            Informations sur Sud
 
+            <div class="text-center">
+              <i class='bx bx-plus mx-2'></i>
+            </div>
+            <div class="hidden text-center">
+              <i class='hidden bx bx-minus mx-2'></i>
+            </div>
+
+          </button>
+
+          <div class="hidden my-4" id="info-sud">
+
+
+            <div class="bg-white rounded-lg  w-full info">
+
+              <div class="p-2 my-2 bg-yellow-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Superficie</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">10 00 m<sup>2</sup> </h2>
+
+              </div>
+              <div class="p-2 my-2 bg-blue-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Populations</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">12 000</h2>
+              </div>
+              <div class="p-2 my-2 bg-pink-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Quartiers</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">23</h2>
+              </div>
+              <div class="p-2 my-2 bg-teal-100 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Maisons</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">2 000</h2>
+              </div>
+              <div class="p-2 my-2 bg-orange-300 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Historiques</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">8</h2>
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="my-4 w-full border-2 p-4 rounded-lg">
+          <ul id="menu-sud" class="list max-w-md space-y-1  list-none list-inside dark:text-gray-400 font-bold ">
+        </ul>
+        
       </div>
+
+    </div>
     </div>
 
     <h2 id="accordion-collapse-heading-8">
       <button type="button"
-        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
         data-accordion-target="#accordion-collapse-body-8" aria-expanded="false"
         aria-controls="accordion-collapse-body-8">
         <span>DEPARTEMENT GRANDE ANSE</span>
@@ -245,15 +567,69 @@
       </button>
     </h2>
     <div id="accordion-collapse-body-8" class="hidden" aria-labelledby="accordion-collapse-heading-8">
-      <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-        <p class="mb-2 text-gray-500 dark:text-gray-400">Contenu de département de ...</p>
+      <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+       
+        <div class="ml-5">
+          <button data-collapse-toggle="info-grandeanse" type="button"
+            class="inline-flex items-center justify-center p-2 w-auto h-10 text-lg font-semibold rounded-lg bg-blue-500 text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="info-grandeanse" aria-expanded="false">
+            Informations sur Grande Anse
 
+            <div class="text-center">
+              <i class='bx bx-plus mx-2'></i>
+            </div>
+            <div class="hidden text-center">
+              <i class='hidden bx bx-minus mx-2'></i>
+            </div>
+
+          </button>
+
+          <div class="hidden my-4" id="info-grandeanse">
+
+
+            <div class="bg-white rounded-lg  w-full info">
+
+              <div class="p-2 my-2 bg-yellow-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Superficie</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">10 00 m<sup>2</sup> </h2>
+
+              </div>
+              <div class="p-2 my-2 bg-blue-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Populations</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">12 000</h2>
+              </div>
+              <div class="p-2 my-2 bg-pink-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Quartiers</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">23</h2>
+              </div>
+              <div class="p-2 my-2 bg-teal-100 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Maisons</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">2 000</h2>
+              </div>
+              <div class="p-2 my-2 bg-orange-300 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Historiques</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">8</h2>
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="my-4 w-full border-2 p-4 rounded-lg">
+          <ul id="menu-grandeanse" class="list max-w-md space-y-1  list-none list-inside dark:text-gray-400 font-bold ">
+        </ul>
+        
       </div>
+
+    </div>
     </div>
 
     <h2 id="accordion-collapse-heading-9">
       <button type="button"
-        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
         data-accordion-target="#accordion-collapse-body-9" aria-expanded="false"
         aria-controls="accordion-collapse-body-9">
         <span>DEPARTEMENT NORD-OUEST</span>
@@ -265,15 +641,69 @@
       </button>
     </h2>
     <div id="accordion-collapse-body-9" class="hidden" aria-labelledby="accordion-collapse-heading-9">
-      <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-        <p class="mb-2 text-gray-500 dark:text-gray-400">Contenu de département de ...</p>
+      <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+       
+        <div class="ml-5">
+          <button data-collapse-toggle="info-nordouest" type="button"
+            class="inline-flex items-center justify-center p-2 w-auto h-10 text-lg font-semibold rounded-lg bg-blue-500 text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="info-nordouest" aria-expanded="false">
+            Informations sur Nord ouest
 
+            <div class="text-center">
+              <i class='bx bx-plus mx-2'></i>
+            </div>
+            <div class="hidden text-center">
+              <i class='hidden bx bx-minus mx-2'></i>
+            </div>
+
+          </button>
+
+          <div class="hidden my-4" id="info-nordouest">
+
+
+            <div class="bg-white rounded-lg  w-full info">
+
+              <div class="p-2 my-2 bg-yellow-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Superficie</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">10 00 m<sup>2</sup> </h2>
+
+              </div>
+              <div class="p-2 my-2 bg-blue-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Populations</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">12 000</h2>
+              </div>
+              <div class="p-2 my-2 bg-pink-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Quartiers</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">23</h2>
+              </div>
+              <div class="p-2 my-2 bg-teal-100 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Maisons</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">2 000</h2>
+              </div>
+              <div class="p-2 my-2 bg-orange-300 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Historiques</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">8</h2>
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="my-4 w-full border-2 p-4 rounded-lg">
+          <ul id="menu-nordouest" class="list max-w-md space-y-1  list-none list-inside dark:text-gray-400 font-bold ">
+        </ul>
+        
       </div>
+
+    </div>
     </div>
 
     <h2 id="accordion-collapse-heading-10">
       <button type="button"
-        class="flex items-center rounded-b-xl justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
         data-accordion-target="#accordion-collapse-body-10" aria-expanded="false"
         aria-controls="accordion-collapse-body-10">
         <span>DEPARTEMENT NIPPES</span>
@@ -285,10 +715,64 @@
       </button>
     </h2>
     <div id="accordion-collapse-body-10" class="hidden" aria-labelledby="accordion-collapse-heading-10">
-      <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-        <p class="mb-2 text-gray-500 dark:text-gray-400">Contenu de département de ...</p>
+      <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+       
+        <div class="ml-5">
+          <button data-collapse-toggle="info-nippes" type="button"
+            class="inline-flex items-center justify-center p-2 w-auto h-10 text-lg font-semibold rounded-lg bg-blue-500 text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="info-nippes" aria-expanded="false">
+            Informations sur Nippes
 
+            <div class="text-center">
+              <i class='bx bx-plus mx-2'></i>
+            </div>
+            <div class="hidden text-center">
+              <i class='hidden bx bx-minus mx-2'></i>
+            </div>
+
+          </button>
+
+          <div class="hidden my-4" id="info-nippes">
+
+
+            <div class="bg-white rounded-lg  w-full info">
+
+              <div class="p-2 my-2 bg-yellow-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Superficie</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">10 00 m<sup>2</sup> </h2>
+
+              </div>
+              <div class="p-2 my-2 bg-blue-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Populations</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">12 000</h2>
+              </div>
+              <div class="p-2 my-2 bg-pink-200 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Quartiers</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">23</h2>
+              </div>
+              <div class="p-2 my-2 bg-teal-100 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Maisons</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">2 000</h2>
+              </div>
+              <div class="p-2 my-2 bg-orange-300 w-full rounded-lg">
+                <h2 class="text-lg font-black font-semibold">Historiques</h2>
+                <h2 class="text-lg text-gray-500 font-semibold">8</h2>
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="my-4 w-full border-2 p-4 rounded-lg">
+          <ul id="menu-nippes" class="list max-w-md space-y-1  list-none list-inside dark:text-gray-400 font-bold ">
+        </ul>
+        
       </div>
+
+    </div>
     </div>
     </div>
     <!-- fin accordion -->

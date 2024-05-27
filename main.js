@@ -111,7 +111,7 @@ var JSON_OUEST = {
           name: "5e Section Bellevue Chardonnière  ",
           link: "#",
           sub: null
-        },]
+        }]
       }, {
         name: "Commune de Kenscoff ".toUpperCase(),
         link: "#",
@@ -135,7 +135,7 @@ var JSON_OUEST = {
           name: "5e Section Grand Fond ",
           link: "#",
           sub: null
-        },]
+        }]
       }, {
         name: "Commune de Gressier".toUpperCase(),
         link: "#",
@@ -151,7 +151,7 @@ var JSON_OUEST = {
           name: "3e Section Petit Boucan",
           link: "#",
           sub: null
-        },]
+        }]
       }, {
         name: "Commune de Cité Soleil".toUpperCase(),
         link: "#",
@@ -163,7 +163,7 @@ var JSON_OUEST = {
           name: "2e Section Varreux",
           link: "#",
           sub: null
-        },]
+        }]
       }, {
         name: " Commune de Tabarre".toUpperCase(),
         link: "#",
@@ -175,10 +175,9 @@ var JSON_OUEST = {
           name: "2e Section Bellevue",
           link: "#",
           sub: null
-        },]
+        }]
       }
       ]
-      ,
     }]
 };
 
@@ -194,10 +193,9 @@ var JSON_SUDEST = {
           name: "1re Section Bas Cap Rouge ",
           link: "#",
           sub: null
-        },
-
+        }
         ]
-      },]
+      }]
     }]
 };
 
@@ -213,10 +211,10 @@ var JSON_NORD = {
           name: "1re Section Bande du Nord",
           link: "#",
           sub: null
-        },
+        }
 
         ]
-      },]
+      }]
     }]
 };
 
@@ -232,10 +230,10 @@ var JSON_NORDEST = {
           name: "1re Section  Dumas",
           link: "#",
           sub: null
-        },
+        }
 
         ]
-      },]
+      }]
     }]
 };
 
@@ -251,10 +249,10 @@ var JSON_ARTIBONITE = {
           name: "1re Section Pont Tamarin ",
           link: "#",
           sub: null
-        },
+        }
 
         ]
-      },]
+      }]
     }]
 };
 
@@ -270,10 +268,10 @@ var JSON_CENTRE = {
           name: "1re Section Juanaria",
           link: "#",
           sub: null
-        },
+        }
 
         ]
-      },]
+      }]
     }]
 };
 var JSON_SUD = {
@@ -288,10 +286,10 @@ var JSON_SUD = {
           name: "1re Section Bourdet",
           link: "#",
           sub: null
-        },
+        }
 
         ]
-      },]
+      }]
     }]
 };
 var JSON_GRANDEANSE = {
@@ -306,10 +304,10 @@ var JSON_GRANDEANSE = {
           name: "1re Section Basse Voldrogue ",
           link: "#",
           sub: null
-        },
+        }
 
         ]
-      },]
+      }]
     }]
 };
 var JSON_NORDOUEST = {
@@ -324,10 +322,9 @@ var JSON_NORDOUEST = {
           name: "1re Section Baudin",
           link: "#",
           sub: null
-        },
-
+        }
         ]
-      },]
+      }]
     }]
 };
 var JSON_NIPPES = {
@@ -342,10 +339,9 @@ var JSON_NIPPES = {
           name: "1re Section Chalon",
           link: "#",
           sub: null
-        },
-
+        }
         ]
-      },]
+      }]
     }]
 };
 $(function () {

@@ -351,7 +351,6 @@ var JSON_NIPPES = {
 $(function () {
   function parseMenu(ul, menu) {
     for (var i = 0; i < menu.length; i++) {
-      console.log(menu[i]);
       var li = $(ul).append(
         '<li class="font-medium text-blue-600 dark:text-blue-500">' + menu[i].name + '</li>');
       if (menu[i].sub != null) {
